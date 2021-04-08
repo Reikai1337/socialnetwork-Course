@@ -1,0 +1,23 @@
+.newPost {
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: 4rem;
+    background-color:snow;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.newPost textarea {
+    width: 80%;
+    height: 3rem;
+}
+.newPost button {
+    width: 10%;
+    height: 2rem;
+    background-color: rgb(113, 119, 199);
+    border-radius: 1rem;
+    border: none;
+} 

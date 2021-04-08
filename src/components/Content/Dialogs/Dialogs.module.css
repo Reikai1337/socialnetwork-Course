@@ -1,0 +1,6 @@
+.dialogs{
+    width: 100%;
+    background-color: rgb(191, 212, 198);
+    height: 35rem;
+    display: flex;
+}

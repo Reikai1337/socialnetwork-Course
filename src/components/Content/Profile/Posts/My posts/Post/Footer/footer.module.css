@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    justify-content: flex-end;
+}
+.footer span {
+    margin-right: 0.5rem;
+}
+.footer button {
+    border-radius: 0.5rem;
+}

@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 15%;
+    width: 100%;
+    background-color: rgb(187, 169, 124);
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+.textarea {
+    height: 90%;
+    width: 88%;
+    border-radius: 1rem;
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+.send {
+    height: 50%;
+    width: 9%;
+    border-radius: 1rem;
+    border: none;
+}

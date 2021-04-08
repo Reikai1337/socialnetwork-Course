@@ -1,0 +1,98 @@
+.mainInfoWarp {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+.dateOfBirthWrap {
+    display: flex;
+    height: 25%;
+}
+.dateOfBirthWrap div span {
+    font-size: 1rem;
+}
+.birthDate {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(77, 77, 77);
+}
+.birthDateValue {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(80, 80, 145);
+}
+.cityWrap {
+    display: flex;
+    height: 25%;
+}
+.cityWrap div span {
+    font-size: 1rem;
+}
+.city {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(77, 77, 77);
+}
+.cityValue {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(80, 80, 145);
+}
+.workplaceWrap {
+    display: flex;
+    height: 25%;
+}
+.workplaceWrap div span {
+    font-size: 1rem;
+}
+.workplace {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(77, 77, 77);
+}
+.workplaceValue {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(80, 80, 145);
+}
+.showDet {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    color: rgb(80, 80, 145);
+}
+
+
+.BIOInfoWrap {
+    width: 80%;
+    height: 4.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.BIOInfoWrap div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.BIOCount {
+    font-size: 1.5rem;
+    color: rgb(80, 80, 145);
+}
+.BIOTags {
+    color: rgb(77, 77, 77);
+}

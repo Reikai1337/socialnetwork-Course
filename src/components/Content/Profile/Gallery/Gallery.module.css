@@ -1,0 +1,38 @@
+.gallery{
+    width: 100%;
+    height: 12rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    background-color:snow;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.gHeader {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-size: 1.1rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+.photoCount {
+    color: gray;
+}
+.photoContainer {
+    width: 100%;
+    height: 9rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+.photoContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.photoContainer div {
+    height: 100%;
+    width: 23%;
+    background-color: mediumpurple;
+}

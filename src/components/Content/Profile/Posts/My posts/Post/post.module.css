@@ -1,0 +1,7 @@
+.item {
+    height: 8rem;
+    width: 100%;
+    /* background-color: indigo; */
+    display: flex;
+    flex-direction: column;
+}

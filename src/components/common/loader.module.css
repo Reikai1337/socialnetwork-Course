@@ -1,0 +1,12 @@
+.loader {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+.loaderWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}

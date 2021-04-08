@@ -1,0 +1,21 @@
+.items {
+    height: 100%;
+    width: 30%;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.items a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    background-color: rgb(218, 194, 223);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+.items a.active {
+    background-color: rgb(38, 71, 133);
+}
