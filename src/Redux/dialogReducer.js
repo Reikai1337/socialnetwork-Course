@@ -21,19 +21,19 @@ let initialState = {
         [
             {
                 user:'me',
-                text:['Hello, how are you?','Im fine, and you?','Good!','example example '],
+                text:['Example1','Example2','Example3!','Example4'],
             },
             {
                 user:'interlocutor',
-                text:['Go play football?','No, I don`t do anal=)'],
+                text:['Example5','Example6'],
             },
             {
                 user:'interlocutor',
-                text:['I find you!','ok =(']
+                text:['Example7','Example8']
             },
             {
                 user:'me',
-                text:['Hello, how are you?','Im fine, and you?','Good!','example example '],
+                text:['Example9?','10?','Example11!','Example12'],
             },
         ],
         [

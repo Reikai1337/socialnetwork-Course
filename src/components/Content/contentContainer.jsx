@@ -39,10 +39,4 @@ const ContentContainer = compose(
     withRouter, 
 )(Profile)
 
-// const ContentContainer = connect(mapStateToProps,{
-//     setUserProfile,
-//     changeFetching,
-//     getProfile,
-
-// })(withRouter(WithAuthRedirect(Profile)))
 export default ContentContainer
