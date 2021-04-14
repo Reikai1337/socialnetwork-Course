@@ -1,4 +1,4 @@
-import Wrapper from "./wrapper";
+import WrapperContainer from "./wrapper";
 import s from "./Header.module.css"
 import React from "react";
 import { connect } from "react-redux";
@@ -11,7 +11,7 @@ class Header extends React.Component {
     render(){
         return (
             <div className={s.header}>
-                 <Wrapper 
+                 <WrapperContainer 
                     {...this.props}
                  /> 
             </div>
@@ -24,11 +24,7 @@ let mapStateToProps = (state) => {
         userID: state.auth.data.id
     }
 }
-// let mapDispatchToProps = (dispatch) => {
-// return {
-        // setUserDataThunk: () => {dispatch(setUserDataThunk())} 
-    // }
-// }
+
 export default connect(mapStateToProps,{
     setUserDataThunk,
 }
