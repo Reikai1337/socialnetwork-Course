@@ -3,6 +3,11 @@ import { authAPI } from "../api/api";
 const SET_USER_DATA = "SET-USER-DATA";
 export const setUserData = (data) => ({ type: SET_USER_DATA, data });
 
+const PREPARING_DATA = "PREPARING-DATA";
+export const preparingData = () => ({ type: PREPARING_DATA });
+
+const LOGIN_ERROR = "LOGIN-ERROR";
+export const loginError = () => ({ type: LOGIN_ERROR });
 let initialState = {
   data: {
     id: null,
@@ -11,10 +16,21 @@ let initialState = {
   },
   isFetching: false,
   auth: false,
+  error: false,
 };
 
 const authReducer = (authState = initialState, action) => {
   switch (action.type) {
+    case PREPARING_DATA:
+      return {
+        ...authState,
+        isFetching: !authState.isFetching,
+      };
+    case LOGIN_ERROR:
+      return {
+        ...authState,
+        error: !authState.error,
+      };
     case SET_USER_DATA:
       return {
         ...authState,
@@ -38,8 +54,16 @@ export const setUserDataThunk = () => {
 
 export const login = (email, password, rememberMe) => {
   return (dispatch) => {
+    dispatch(preparingData());
     authAPI.login(email, password, rememberMe).then((response) => {
-      if (response.data.resultCode === 0) dispatch(setUserDataThunk());
+      console.log(response);
+      if (response.data.resultCode === 0) {
+        dispatch(preparingData());
+        dispatch(setUserDataThunk());
+      } else {
+        dispatch(loginError());
+        dispatch(preparingData());
+      }
     });
   };
 };

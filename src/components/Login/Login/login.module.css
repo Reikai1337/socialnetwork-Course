@@ -15,10 +15,7 @@
   align-items: center;
   border-radius: 2rem;
 }
-.inputMenu span {
-  font-size: 2rem;
-  color: wheat;
-}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -54,6 +51,17 @@
   color: white;
   font-size: 1rem;
 }
+.blocked {
+  margin-top: 1rem;
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: white;
+  color: rgb(28, 165, 87);
+  font-size: 1rem;
+}
+
 .errorMessage {
   box-sizing: border-box;
   width: 100%;
@@ -62,4 +70,12 @@
   font-size: 1.1rem;
   padding: 0 1rem;
 
+}
+.wrongData {
+  color: red;
+  font-size: 2rem;
+}
+.defaultColor {
+  font-size: 2rem;
+  color: wheat;
 }

@@ -13,7 +13,8 @@ class LoginContainer extends React.Component {
 const mapStateToProps = (state) => {
   return {
     auth: state.auth.auth,
-    id: state.auth.data.id,
+    isFetching: state.auth.isFetching,
+    error: state.auth.error
   };
 };
 export default connect(mapStateToProps, {

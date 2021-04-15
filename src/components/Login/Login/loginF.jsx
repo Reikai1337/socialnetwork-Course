@@ -10,14 +10,14 @@ const Login = (props) => {
 
   const onSubmit = (data) => {
     console.log(data);
-    const {email,password,rememberMe} = data
-    props.login(email,password,rememberMe)
+    const { email, password, rememberMe } = data;
+    props.login(email, password, rememberMe);
   };
 
   return (
     <div className={style.wrapper}>
       <div className={style.inputMenu}>
-        <span>Login</span>
+        <div className={props.error ? style.wrongData : style.defaultColor}>Login</div>
         <form className={style.form} onSubmit={handleSubmit(onSubmit)}>
           <input
             type="email"
@@ -49,9 +49,14 @@ const Login = (props) => {
           )}
           <div className={style.checkbox}>
             Remember me
-            <input type="checkbox" {...register('rememberMe')}/>
+            <input type="checkbox" {...register("rememberMe")} />
           </div>
-          <input type="submit" value="Login" className={style.submit} />
+          <input
+            disabled={props.isFetching}
+            type="submit"
+            value="Login"
+            className={props.isFetching ? style.blocked : style.submit}
+          />
         </form>
       </div>
     </div>
