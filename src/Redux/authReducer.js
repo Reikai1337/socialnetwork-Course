@@ -1,4 +1,5 @@
 import { authAPI } from "../api/api";
+import { getProfile, getStatus } from "./profileReducer";
 
 const SET_USER_DATA = "SET-USER-DATA";
 export const setUserData = (data) => ({ type: SET_USER_DATA, data });
@@ -8,6 +9,7 @@ export const preparingData = () => ({ type: PREPARING_DATA });
 
 const LOGIN_ERROR = "LOGIN-ERROR";
 export const loginError = () => ({ type: LOGIN_ERROR });
+
 let initialState = {
   data: {
     id: null,
@@ -47,7 +49,11 @@ export default authReducer;
 export const setUserDataThunk = () => {
   return (dispatch) => {
     authAPI.getUserData().then((response) => {
-      if (response.data.resultCode === 0) dispatch(setUserData(response.data));
+      if (response.data.resultCode === 0) {
+        dispatch(setUserData(response.data));
+        dispatch(getProfile(response.data.data.id));
+        dispatch(getStatus(response.data.data.id));
+      }
     });
   };
 };

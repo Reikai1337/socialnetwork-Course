@@ -9,7 +9,7 @@ const Logout = (props) => {
   return (
     <div className={style.loginWrapper}>
       <div className={style.button} onClick={logout}>
-      <ExitToAppIcon />
+      <ExitToAppIcon/>
       </div>
     </div>
   );

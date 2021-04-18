@@ -24,6 +24,8 @@ export const setStatus = (status) => ({ type: SET_STATUS, status });
 const UPDATE_STATUS = "UPDATE-STATUS";
 export const updateStatus = (status) => ({ type: UPDATE_STATUS, status });
 
+
+
 let initialState = {
   postsData: [
     { name: "Rostyslav", postText: "I`m learn JavaScript(", likeCount: 2 },

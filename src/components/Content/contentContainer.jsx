@@ -12,8 +12,10 @@ import { compose } from 'redux'
 
 class Profile extends React.Component {
     componentDidMount(){ 
-        this.props.getProfile(this.props.match.params.userID)
-        this.props.getStatus(this.props.match.params.userID)
+        if(this.props.match.params.userID===undefined){
+            this.props.getProfile(this.props.match.params.userID)
+            this.props.getStatus(this.props.match.params.userID)
+        }
     }
     render(){
         return <Content {...this.props}/>
