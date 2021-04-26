@@ -48,7 +48,7 @@ export default authReducer;
 
 export const setUserDataThunk = () => {
   return (dispatch) => {
-    authAPI.getUserData().then((response) => {
+    return authAPI.getUserData().then((response) => {
       if (response.data.resultCode === 0) {
         dispatch(setUserData(response.data));
         dispatch(getProfile(response.data.data.id));

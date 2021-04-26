@@ -14,7 +14,6 @@ class Navigation extends React.Component {
         <div className={s.navigation}>
             <ul>
                 {this.props.navigation.map((item,id)=>
-                // <NavLink key={id} onClick={()=>{if(id==0)this.toMyProfile.bind(this)}} to={item.route} activeClassName={s.activeLink}>{item.text}</NavLink>)}
                 <NavLink key={id} to={item.route} activeClassName={s.activeLink}>{item.text}</NavLink>)}
             </ul>
         </div>)
